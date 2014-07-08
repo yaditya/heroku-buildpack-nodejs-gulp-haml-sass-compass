@@ -12,6 +12,8 @@ Differences to the original buildpack:
 gulp.task('heroku', 'build')
 ```
 
+This task will be called by the compile script. You should build everything and delegate the serving to a server used by the Procfile.
+
 ## Dokku
 
 Create a `.env` file with this content to use this custom buildpack
@@ -21,7 +23,5 @@ export BUILDPACK_URL=https://github.com/9elements/heroku-buildpack-nodejs-gulp-h
 ```
 
 ## License
-
-MIT
 
 http://opensource.org/licenses/MIT
